@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patan Afzal Khan | Data Analyst & Financial Insights</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              accent: '#06b6d4'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass-card {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card:hover {
+      border-color: rgba(16, 185, 129, 0.35);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-slate-950">
+
+  <!-- Navigation Bar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#hero" class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
+        <span class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-mono border border-emerald-500/40">AK</span>
+        <span>Afzal<span class="text-emerald-400">.Data</span></span>
+      </a>
+      <div class="hidden md:flex items-center space-x-6 text-sm text-slate-300">
+        <a href="#about" class="hover:text-emerald-400 transition">About</a>
+        <a href="#skills" class="hover:text-emerald-400 transition">Skills</a>
+        <a href="#experience" class="hover:text-emerald-400 transition">Experience</a>
+        <a href="#projects" class="hover:text-emerald-400 transition">Projects</a>
+        <a href="#playground" class="hover:text-emerald-400 transition">Live Demo</a>
+        <a href="#education" class="hover:text-emerald-400 transition">Education</a>
+        <a href="#contact" class="px-4 py-2 bg-emerald-500 text-slate-950 font-semibold rounded-lg hover:bg-emerald-400 transition shadow-lg shadow-emerald-500/20">Contact Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-[90vh] flex flex-col justify-center">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Available for Data Analyst & BI Roles | Hyderabad, India
+      </div>
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+        Patan Afzal Khan
+      </h1>
+      <p class="text-xl sm:text-2xl font-medium text-emerald-400 mt-2">
+        Data Analyst | Business & Financial Insights
+      </p>
+      <p class="mt-6 text-slate-400 text-base sm:text-lg leading-relaxed">
+        Detail-oriented and results-driven Data Analyst with a robust foundation in Financial Analysis and hands-on expertise spanning SQL, Python, Power BI, and Advanced Excel. Converting raw transactional data into high-impact executive intelligence.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-4 items-center">
+        <a href="#projects" class="px-6 py-3 bg-emerald-500 text-slate-950 font-bold rounded-xl hover:bg-emerald-400 transition flex items-center gap-2 shadow-lg shadow-emerald-500/20">
+          <span>Explore Projects</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+        <a href="mailto:afzalkhanpatan64@gmail.com" class="px-6 py-3 glass-card text-white font-semibold rounded-xl hover:border-slate-500 transition flex items-center gap-2">
+          <i data-lucide="mail" class="w-4 h-4 text-emerald-400"></i>
+          <span>Email Afzal</span>
+        </a>
+        <a href="tel:+917702705182" class="px-4 py-3 glass-card text-slate-300 rounded-xl hover:text-white transition flex items-center gap-2">
+          <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i>
+          <span>+91 7702705182</span>
+        </a>
+      </div>
+
+      <!-- Quick Metrics Grid -->
+      <div class="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="glass-card p-4 rounded-xl">
+          <div class="text-2xl sm:text-3xl font-extrabold text-white">6+ Mo</div>
+          <div class="text-xs text-slate-400 uppercase tracking-wider font-mono mt-1">Intensive Analytics Fellowship</div>
+        </div>
+        <div class="glass-card p-4 rounded-xl">
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400">100%</div>
+          <div class="text-xs text-slate-400 uppercase tracking-wider font-mono mt-1">Data Integrity Enforced</div>
+        </div>
+        <div class="glass-card p-4 rounded-xl">
+          <div class="text-2xl sm:text-3xl font-extrabold text-white">4+ Certs</div>
+          <div class="text-xs text-slate-400 uppercase tracking-wider font-mono mt-1">BI, SQL, Excel & Analytics</div>
+        </div>
+        <div class="glass-card p-4 rounded-xl">
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400">MBA + B.Com</div>
+          <div class="text-xs text-slate-400 uppercase tracking-wider font-mono mt-1">Finance & Tech Foundation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-900">
+    <div class="mb-12">
+      <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400">Core Competencies</h2>
+      <h3 class="text-3xl font-bold text-white mt-1">Technical Skills & Tooling</h3>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="glass-card p-6 rounded-2xl">
+        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center mb-4">
+          <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+        </div>
+        <h4 class="text-lg font-bold text-white">Data Analysis & BI</h4>
+        <ul class="mt-4 space-y-2 text-sm text-slate-400">
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>Power BI (DAX, Measures)</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>Data Modeling & KPI Dashboards</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>Advanced Excel (XLOOKUP, VLOOKUP)</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>Pivot Tables & Chart Visualizations</li>
+        </ul>
+      </div>
+
+      <div class="glass-card p-6 rounded-2xl">
+        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 flex items-center justify-center mb-4">
+          <i data-lucide="code" class="w-6 h-6"></i>
+        </div>
+        <h4 class="text-lg font-bold text-white">Programming</h4>
+        <ul class="mt-4 space-y-2 text-sm text-slate-400">
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>Python (Pandas, NumPy)</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>Matplotlib & Seaborn</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>Scikit-Learn (ML Classification)</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>Jupyter Notebook & Google Colab</li>
+        </ul>
+      </div>
+
+      <div class="glass-card p-6 rounded-2xl">
+        <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center mb-4">
+          <i data-lucide="database" class="w-6 h-6"></i>
+        </div>
+        <h4 class="text-lg font-bold text-white">Database & Querying</h4>
+        <ul class="mt-4 space-y-2 text-sm text-slate-400">
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>SQL & PostgreSQL</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Complex Queries & Joins</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Aggregations & Grouping</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Data Transformation & Indexing</li>
+        </ul>
+      </div>
+
+      <div class="glass-card p-6 rounded-2xl">
+        <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 text-purple-400 flex items-center justify-center mb-4">
+          <i data-lucide="trending-up" class="w-6 h-6"></i>
+        </div>
+        <h4 class="text-lg font-bold text-white">Analytical Domain</h4>
+        <ul class="mt-4 space-y-2 text-sm text-slate-400">
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>Financial Analysis & Variance</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>Exploratory Data Analysis (EDA)</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>Sales & Performance Metrics</li>
+          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>Statistical Summaries</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-900">
+    <div class="mb-12">
+      <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400">Career History</h2>
+      <h3 class="text-3xl font-bold text-white mt-1">Professional Training & Experience</h3>
+    </div>
+
+    <div class="glass-card p-8 rounded-2xl border-l-4 border-l-emerald-500">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <h4 class="text-xl font-bold text-white">Data Analyst Intern / Trainee</h4>
+          <p class="text-emerald-400 font-medium">Fortune IT Solutions &bull; Hyderabad, India</p>
+        </div>
+        <span class="px-3 py-1 bg-slate-800 text-slate-300 font-mono text-xs rounded-full border border-slate-700 w-fit">
+          Jan 2026 – Jul 2026
+        </span>
+      </div>
+      <div class="mt-6 space-y-3 text-slate-300 text-sm leading-relaxed">
+        <p class="flex items-start gap-3">
+          <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+          <span>Completed an intensive 6-month hands-on data analytics fellowship focusing on Advanced Excel, SQL, Python (Pandas), and Power BI.</span>
+        </p>
+        <p class="flex items-start gap-3">
+          <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+          <span>Executed end-to-end data analytics assignments and weekly project sprints successfully simulating real-world enterprise business scenarios.</span>
+        </p>
+        <p class="flex items-start gap-3">
+          <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+          <span>Extracted, cleansed, and transformed complex structured and unstructured datasets to enforce 100% data integrity prior to modeling.</span>
+        </p>
+        <p class="flex items-start gap-3">
+          <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+          <span>Formulated advanced PostgreSQL queries and developed interactive Power BI reports to accurately track core performance metrics.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-900">
+    <div class="mb-12">
+      <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400">Portfolio Work</h2>
+      <h3 class="text-3xl font-bold text-white mt-1">Featured Key Projects</h3>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Project 1 -->
+      <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-emerald-400 mb-3">
+            <span>PYTHON</span> &bull; <span>SCIKIT-LEARN</span> &bull; <span>JUPYTER</span>
+          </div>
+          <h4 class="text-xl font-bold text-white">Iris Machine Learning Classification</h4>
+          <p class="text-sm text-slate-400 mt-3 leading-relaxed">
+            Built an end-to-end machine learning classification pipeline utilizing the Iris dataset to accurately predict flower species based on sepal and petal measurements.
+          </p>
+          <div class="mt-4 p-3 bg-slate-900/90 rounded-lg border border-slate-800 text-xs font-mono text-slate-300">
+            Pipeline: StandardScaler &rarr; LogisticRegression / SVM with accuracy evaluation & confusion matrix.
+          </div>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-800">
+          <span class="text-xs text-slate-400 font-mono">Status: Completed & Documented</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-cyan-400 mb-3">
+            <span>PYTHON</span> &bull; <span>POSTGRESQL</span> &bull; <span>POWER BI</span>
+          </div>
+          <h4 class="text-xl font-bold text-white">Company Overview & Workforce Analytics</h4>
+          <p class="text-sm text-slate-400 mt-3 leading-relaxed">
+            Cleaned employee and sales records via Pandas and ingested them into PostgreSQL for relational joins. Designed dynamic Power BI dashboards with custom DAX for departmental drill-through.
+          </p>
+          <div class="mt-4 p-3 bg-slate-900/90 rounded-lg border border-slate-800 text-xs font-mono text-slate-300">
+            DAX: Attrition Rate %, Headcount Growth, and Departmental Cost Distribution measures.
+          </div>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-800">
+          <span class="text-xs text-slate-400 font-mono">Status: Production Dashboard</span>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-amber-400 mb-3">
+            <span>EXCEL</span> &bull; <span>SQL</span> &bull; <span>POWER BI</span>
+          </div>
+          <h4 class="text-xl font-bold text-white">Sales Performance & Trends Analysis</h4>
+          <p class="text-sm text-slate-400 mt-3 leading-relaxed">
+            Standardized raw multi-category sales transaction data to evaluate monthly revenue trends, profit margins, and top-performing product segments with interactive slicers.
+          </p>
+          <div class="mt-4 p-3 bg-slate-900/90 rounded-lg border border-slate-800 text-xs font-mono text-slate-300">
+            Features: Monthly MoM Growth %, Profit Margin Analysis, and Automated Executive Summaries.
+          </div>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-800">
+          <span class="text-xs text-slate-400 font-mono">Status: Automated Reporting</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Demo / Playground Section -->
+  <section id="playground" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-900">
+    <div class="mb-8">
+      <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400">Interactive Preview</h2>
+      <h3 class="text-3xl font-bold text-white mt-1">Live Analytics Simulation Widget</h3>
+      <p class="text-sm text-slate-400 mt-2">Interact with sample metrics from the Sales Performance & Trends project.</p>
+    </div>
+
+    <div class="glass-card p-6 sm:p-8 rounded-2xl">
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+        <div class="flex items-center gap-2">
+          <button onclick="updateChart('revenue')" id="btn-rev" class="px-4 py-1.5 text-xs font-semibold rounded-lg bg-emerald-500 text-slate-950">Revenue ($k)</button>
+          <button onclick="updateChart('profit')" id="btn-prof" class="px-4 py-1.5 text-xs font-semibold rounded-lg bg-slate-800 text-slate-300 hover:text-white">Net Margin ($k)</button>
+        </div>
+        <span class="text-xs font-mono text-slate-400">Powered by Chart.js &bull; Dynamic Render</span>
+      </div>
+      <div class="h-72 w-full">
+        <canvas id="liveChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certifications -->
+  <section id="education" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-900">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <!-- Education -->
+      <div>
+        <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400">Academic Foundation</h2>
+        <h3 class="text-2xl font-bold text-white mt-1 mb-6">Education</h3>
+        <div class="space-y-6">
+          <div class="glass-card p-6 rounded-2xl">
+            <span class="text-xs font-mono text-emerald-400">Apr 2025</span>
+            <h4 class="text-lg font-bold text-white mt-1">MBA - Financial Analysis</h4>
+            <p class="text-slate-400 text-sm">SSITS &bull; Rayachoti, India</p>
+            <div class="mt-2 inline-block px-2.5 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded text-xs font-mono">
+              CGPA: 7.33 / 10.0
+            </div>
+          </div>
+
+          <div class="glass-card p-6 rounded-2xl">
+            <span class="text-xs font-mono text-emerald-400">Jun 2023</span>
+            <h4 class="text-lg font-bold text-white mt-1">B.Com - Computer Applications</h4>
+            <p class="text-slate-400 text-sm">Govt Degree College &bull; Rayachoti, India</p>
+            <p class="text-xs text-slate-400 mt-2">Focus on commerce, computational accounting, and IT fundamentals.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div>
+        <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400">Credentials</h2>
+        <h3 class="text-2xl font-bold text-white mt-1 mb-6">Professional Certifications</h3>
+        <div class="space-y-4">
+          <div class="glass-card p-4 rounded-xl flex items-center justify-between">
+            <div>
+              <h5 class="text-white font-medium text-sm">Data Analyst Certification</h5>
+              <p class="text-xs text-slate-400">Fortune IT Solutions</p>
+            </div>
+            <span class="text-xs font-mono text-emerald-400">Aug 2026</span>
+          </div>
+          <div class="glass-card p-4 rounded-xl flex items-center justify-between">
+            <div>
+              <h5 class="text-white font-medium text-sm">Microsoft Power BI for Beginners</h5>
+              <p class="text-xs text-slate-400">Skill Course</p>
+            </div>
+            <span class="text-xs font-mono text-emerald-400">Aug 2026</span>
+          </div>
+          <div class="glass-card p-4 rounded-xl flex items-center justify-between">
+            <div>
+              <h5 class="text-white font-medium text-sm">Advanced SQL</h5>
+              <p class="text-xs text-slate-400">Skill Course</p>
+            </div>
+            <span class="text-xs font-mono text-emerald-400">Aug 2026</span>
+          </div>
+          <div class="glass-card p-4 rounded-xl flex items-center justify-between">
+            <div>
+              <h5 class="text-white font-medium text-sm">Microsoft Excel Beginner to Advance</h5>
+              <p class="text-xs text-slate-400">Skill Course</p>
+            </div>
+            <span class="text-xs font-mono text-emerald-400">Jul 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer -->
+  <footer id="contact" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-900 text-center">
+    <h3 class="text-2xl sm:text-3xl font-bold text-white">Let's Connect</h3>
+    <p class="text-slate-400 text-sm mt-2 max-w-md mx-auto">Open to Data Analyst, Financial Analyst, and Business Intelligence opportunities in Hyderabad and remote.</p>
+
+    <div class="mt-6 flex flex-wrap justify-center gap-6 text-sm">
+      <a href="mailto:afzalkhanpatan64@gmail.com" class="text-emerald-400 hover:underline">afzalkhanpatan64@gmail.com</a>
+      <span class="text-slate-700">&bull;</span>
+      <a href="tel:+917702705182" class="text-slate-300 hover:text-white">+91 7702705182</a>
+      <span class="text-slate-700">&bull;</span>
+      <span class="text-slate-400">Hyderabad, India 500001</span>
+    </div>
+
+    <p class="text-xs text-slate-400 mt-12">&copy; 2026 Patan Afzal Khan. All rights reserved.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    // Chart.js Data Simulation
+    const ctx = document.getElementById('liveChart').getContext('2d');
+    const datasets = {
+      revenue: {
+        label: 'Monthly Revenue ($k)',
+        data: [42, 55, 68, 62, 85, 94, 110],
+        borderColor: '#10b981',
+        backgroundColor: 'rgba(16, 185, 129, 0.15)',
+        fill: true,
+        tension: 0.35
+      },
+      profit: {
+        label: 'Operating Profit ($k)',
+        data: [12, 18, 22, 19, 31, 36, 45],
+        borderColor: '#06b6d4',
+        backgroundColor: 'rgba(6, 182, 212, 0.15)',
+        fill: true,
+        tension: 0.35
+      }
+    };
+
+    let chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+        datasets: [datasets.revenue]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { labels: { color: '#94a3b8', font: { family: 'monospace' } } }
+        },
+        scales: {
+          x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#64748b' } },
+          y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#64748b' } }
+        }
+      }
+    });
+
+    function updateChart(type) {
+      chart.data.datasets = [datasets[type]];
+      chart.update();
+      if(type === 'revenue') {
+        document.getElementById('btn-rev').className = "px-4 py-1.5 text-xs font-semibold rounded-lg bg-emerald-500 text-slate-950";
+        document.getElementById('btn-prof').className = "px-4 py-1.5 text-xs font-semibold rounded-lg bg-slate-800 text-slate-300 hover:text-white";
+      } else {
+        document.getElementById('btn-prof').className = "px-4 py-1.5 text-xs font-semibold rounded-lg bg-cyan-500 text-slate-950";
+        document.getElementById('btn-rev').className = "px-4 py-1.5 text-xs font-semibold rounded-lg bg-slate-800 text-slate-300 hover:text-white";
+      }
+    }
+  </script>
+</body>
+</html>
